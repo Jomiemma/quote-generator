@@ -1,13 +1,54 @@
-body {
+body, html{
+  margin-top: 10px;
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Times New Roman;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: backgroound-color 0.5s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#quote-box {
+  background-color: white;
+  max-width: 500px;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+}
+
+#text{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#author{
+  font-size: 18px;
+  font-style: italic; /* come back here */
+  margin-bottom: 30px;
+  color: #666;
+}
+
+#new-quote {
+  background-color: #16a085;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #16a085;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
